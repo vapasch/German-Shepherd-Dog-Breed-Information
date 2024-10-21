@@ -131,4 +131,45 @@ html {
 #Gdog, .dog {
     scroll-margin-top: 80px; 
 }
+/*----------------------------------------------*/
+/*mono gia ta kinhta einai ta katw*/
+@media (max-width: 768px) {
+    
+    /*kanei to navbar scrollable*/
+    nav ul {
+        flex-direction: row; /*Keep row direction*/
+        overflow-x: auto; /*Enable orizontio scrolling */
+        white-space: nowrap; /*Ensure no line breaks*/
+    }
+
+    nav ul li {
+        flex: 0 0 auto; /*Ensure no shrinking*/
+        margin: 0 5px; /*kalytero spacing*/
+    }
+
+    nav {
+        height: auto; /*Let the nav height adjust automatically*/
+        width: 100%;
+    }
+
+    .photo-gallery {
+        justify-content: center;
+    }
+
+    .photo {
+        width: 100%; /*kanei tis fwto na pianoyn olh thn othonh*/
+        margin-bottom: 20px;
+    }
+
+    /*kalytero text alignment*/
+    .palign {
+        padding: 0 10%;
+    }
+
+    #Gdog {
+        margin-top: 100px;
+        padding: 60px 15px;
+        line-height: 1.5;
+    }
+}
 
