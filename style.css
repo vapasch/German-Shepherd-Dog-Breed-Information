@@ -133,7 +133,7 @@ html {
 }
 /*----------------------------------------------*/
 /*mono gia ta kinhta einai ta katw*/
-@media (max-width: 768px) {
+@media (max-width: 650px) {
     
     /*kanei to navbar scrollable*/
     nav ul {
@@ -144,7 +144,7 @@ html {
 
     nav ul li {
         flex: 0 0 auto; /*Ensure no shrinking*/
-        margin: 0 5px; /*kalytero spacing*/
+        margin: 0px 5px; /*kalytero spacing*/
     }
 
     nav {
@@ -163,13 +163,22 @@ html {
 
     /*kalytero text alignment*/
     .palign {
-        padding: 0 10%;
+        padding: 0px 10%;
     }
 
     #Gdog {
         margin-top: 100px;
         padding: 60px 15px;
         line-height: 1.5;
+    }
+    .dog {
+        max-width: 650px;
+        width: 100%;
+    }
+    nav ul li a::after{
+        background-color: #fdfdfd00; 
+        transform: translateY(5%); 
+        transition: transform 0.2s; 
     }
 }
 
